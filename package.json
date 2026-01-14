@@ -4,20 +4,19 @@
     "description": "Implementação do tabnews.com.br para o curso.dev (só que em Typescript).",
     "main": "build/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc",
-        "dev": "tsx src/index.ts",
-        "start": "node ."
+        "build": "tsc && next build",
+        "dev": "next dev",
+        "start": "next start"
     },
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "next": "^13.1.6",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "next": "^16.1.1",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3"
     },
     "devDependencies": {
-        "@types/node": "^25.0.6",
+        "@types/node": "^24.10.8",
         "@types/react": "^19.2.8",
         "@types/react-dom": "^19.2.3",
         "tsx": "^4.21.0",

@@ -18,7 +18,7 @@
         "skipLibCheck": true,
         "esModuleInterop": true,
         "strict": true,
-        "lib": ["ESNext"],
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
         "target": "esnext",
         "module": "nodenext",
         "moduleResolution": "nodenext",
