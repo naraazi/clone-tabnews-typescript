@@ -1,0 +1,3 @@
+O nome de repositório é um 'slug', um identificador único.
+
+O protocolo Secure Shell (SSH) é uma forma de nos conectarmos a um servidor remoto de modo seguro, usando criptografia.

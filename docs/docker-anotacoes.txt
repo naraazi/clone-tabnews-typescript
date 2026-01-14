@@ -1,0 +1,7 @@
+O Docker permite executar programas em ambientes isolados e padronizados, conhecidos como contêineres, com a garantia de
+	que esses programas funcionarão da exata mesma maneira em qualquer máquina, independentemente das configuração de
+	hardware ou software desta.
+
+Para que o Docker funcione (Linux):
+	1. Ou é abrindo a interface gráfica do Docker Desktop;
+	2. Ou rodando: systemctl --user start docker-desktop

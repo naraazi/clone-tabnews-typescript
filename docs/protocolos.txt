@@ -1,0 +1,4 @@
+Protocolos (alguns):
+	* HTTP (Hypertext Transfer Protocol): define regras para tranferência de documentos;
+	* FTP (File Transfer Protocol): dedicado para tranferência de arquivos;
+	* SMTP (Simple Mail Transfer Protocol): tranferência de mensagens de e-mail.

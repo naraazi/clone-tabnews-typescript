@@ -1,0 +1,14 @@
+O Node.js é uma ferramenta que vai nos permitir trabalhar com a linguagem JavaScript diretamente na nossa máquina, sem
+	depender do navegador, que é o ambiente para o qual ela foi feita para rodar originalmente.
+
+nvm alias default lts/hydrogen é o comando que aponta para outra versão do Node (esta deve estar baixada).
+
+Em .nvmrc, as duas letras finais significam "Run Commands". Este arquivo serve para instruções de inicialização,
+	definindo a versão do Node usada no projeto.
+
+A diferença entre o package-lock.json e o package.json:
+	* O package.json tem uma visão mais macro do projeto, salvando informações gerais e as dependências principais
+		(com possibilidade de aceitar versões compatíveis);
+	* O package-lock.json congela a versão exata de cada dependência e subdependência, garantindo que todos que clonarem
+		o projeto terão exatamente o mesmo ambiente.
+

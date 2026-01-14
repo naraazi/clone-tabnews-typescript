@@ -1,0 +1,7 @@
+npx create-next-app: comando oficial para iniciar um novo projeto usando o framework Next.js.
+	* npx: executor de pacotes do Node.js. Ele baixa a versão mais recente do create-next-app, executa a criação do
+		projeto e depois a remove do seu computador, garantindo que você sempre use a versão mais atualizada sem ocupar
+		espaço permanente.
+
+create-next-app: "boilerplate" (modelo) oficial. Ele pergunta se você quer usar TS, ESLint, Tailwind CSS e a estrutura
+	de pastas src/, criando tudo automaticamente.
