@@ -2,13 +2,40 @@ O nome de repositório é um 'slug', um identificador único.
 
 O protocolo Secure Shell (SSH) é uma forma de nos conectarmos a um servidor remoto de modo seguro, usando criptografia.
 
-Alguns comandos:
+Alguns comandos offline:
 	* git log: lista os commits do repositório;
 	* git log --oneline: trás o que aparece no comando acima mas de forma resumida; 
 	* git add: sobe alterações para a staging area;
 	* git commit: realiza novos commits;
 	* git commit --amend: substitui o commit anterior por um novo, mas aproveita as alterações dele;
 	* git diff: calcula a diferença entre as versões/alterações dos arquivos.
-Todos estes comandos funcionam de forma offline no Git.
+
+Alguns comandos online:
+	* git push: empurra alterações locais para o origin (o repositório remoto);
+	* git status: mostra o estado atual do repositório git;
+	* git branch: lista, cria, renomea e deleta branches;
+	* git pull: baixa as atualizações do repositório remoto;
+	* git add -A: adiciona todos os arquivos modificados, novos e deletados;
+	* git add .: adiciona todos os arquivos do diretório atual;
+	* git add package*: adiciona todos os arquivos que começam com "package" (usando padrão de nome);
+	* git add pages/*: adiciona todos os arquivos dentro de uma pasta específica;
+	* git restore --staged <arquivo>: tira arquivos do “stage” (desfaz o git add).
 
 O git oferece Local History.
+
+Git e GitHub não são exatamente backups de códigos oficiais.
+
+Em uma mensagem de commit, é possível renderizar de uma forma especial códigos ou diretórios. Apenas commite dessa
+	forma (exemplo): git commit -m 'adiciona arquivo `.editorconfig`'
+Vai ficar igual os `` usados em markdown.
+
+Refazendo um commit em origin:
+	1. Faça as alterações necessárias (ou corrija o erro);
+	2. git commit --amend, deixando ou trocando a mensagem;
+	3. git push --force-with-lease.
+Isso é adequado quando o trabalho é solo. Em multiequipe, deve ser usado com cautela.
+As vezes, é mais adequado fazer outro commit arrumando o erro.
+
+Diferença do --force pro --force-with-lease:
+	-f: sobrescreve o histórico remoto mesmo se alguém tiver feito push depois de você;
+	--force-with-lease: vai sobrescrever o remoto se o remoto ainda estiver exatamente como você acha que está.

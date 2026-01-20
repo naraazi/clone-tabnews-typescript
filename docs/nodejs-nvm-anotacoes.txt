@@ -12,3 +12,15 @@ A diferença entre o package-lock.json e o package.json:
 	* O package-lock.json congela a versão exata de cada dependência e subdependência, garantindo que todos que clonarem
 		o projeto terão exatamente o mesmo ambiente.
 
+O package.json é o arquivo principal de um projeto Node.js/Next.js.
+Ele descreve o projeto pro npm/yarn/pnpm:
+	* Quais dependências o projeto usa;
+	* Quais comandos existem no projeto;
+	* Informações sobre o projeto.
+
+O package-lock.json é o arquivo que trava exatamente as versões das dependências que foram instaladas no seu projeto.
+Ele:
+	* Faz todo mundo instalar igual;
+	* Evita bugs por versões diferentes;
+	* Deixa o install mais rápido e previsível;
+	* Ajuda em deploy/CI/CD.
