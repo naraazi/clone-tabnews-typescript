@@ -1,0 +1,7 @@
+Os papéis de client e server não são fixos e dependem do que eles estão fazendo.
+Quem define o papel não é quem envia os dados, mas sim quem inicia a comunicação.
+
+Client: faz a requisição, mesmo que esteja enviando dados.
+Server: recebe e processa os dados da requisição.
+
+Proxy: servidor intermediário entre o client e o server.
