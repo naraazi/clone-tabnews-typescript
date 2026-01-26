@@ -1,0 +1,4 @@
+Princípio do Privilégio Mínimo (ou Least Privilege Principle – LPP): cada usuário, sistema ou processo deve ter apenas
+	as permissões mínimas necessárias para fazer seu trabalho — e nada além disso.
+
+Na Vercel, quando fazemos um push, o sistema procura o último commit e implementa as modificações on-the-fly.
